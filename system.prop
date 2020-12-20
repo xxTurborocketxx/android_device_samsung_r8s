@@ -1,0 +1,7 @@
+ro.display.series=Samsung S20 FE
+ro.product.board=exynos990
+ro.board.platform=universal990
+sys.usb.controller=10e00000.dwc3
+ro.boot.dynamic_partitions=true
+#fbe.metadata.wrappedkey=true
+ro.boot.bootdevice=13100000.ufs
