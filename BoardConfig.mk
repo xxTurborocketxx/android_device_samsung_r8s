@@ -57,7 +57,7 @@ TARGET_BOARD_PLATFORM_GPU := mali-g77
 TARGET_PREBUILT_KERNEL := device/samsung/r8s/prebuilt/Image
 TARGET_PREBUILT_DTB := device/samsung/r8s/prebuilt/dtb
 BOARD_PREBUILT_DTBOIMAGE := device/samsung/r8s/prebuilt/recoverydtbo
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+#BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_KERNEL_ARCH := arm64
 
