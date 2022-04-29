@@ -47,7 +47,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 		export OF_FLASHLIGHT_ENABLE=1
 		export OF_FL_PATH1="/system/flashlight"
 		export OF_FL_PATH2=""
-    export OF_SCREEN_H="2500"
+    		export OF_SCREEN_H="2400"
 		export FOX_VERSION="R11.1_1"
 		export OF_CLOCK_POS=1
 		export OF_ALLOW_DISABLE_NAVBAR=0
@@ -58,7 +58,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 		export OF_STATUS_INDENT_RIGHT="48"
 		export OF_STATUS_H="88"
 		export OF_USE_GREEN_LED=0
-    export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-24.3.zip
+    		export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-24.3.zip
 
 		#R11
 		export FOX_R11=1
