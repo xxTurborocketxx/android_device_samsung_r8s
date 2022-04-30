@@ -40,7 +40,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 		export LC_ALL="C"
 		export OF_VANILLA_BUILD=1
 		export OF_NO_SAMSUNG_SPECIAL=0
-		export FOX_DYNAMIC_SAMSUNG_FIX=1
 		export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/bootdevice/by-name/recovery"
 		export OF_USE_MAGISKBOOT=1
 		export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
