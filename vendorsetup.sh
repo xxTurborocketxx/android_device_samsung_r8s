@@ -58,6 +58,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 		export OF_STATUS_H="88"
 		export OF_USE_GREEN_LED=0
     		export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-24.3.zip
+		export OF_MAINTAINER="Johx22 & xxTurborocketxx"
 
 		#R11
 		export FOX_R11=1
