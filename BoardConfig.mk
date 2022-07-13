@@ -51,20 +51,19 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Platform
 TARGET_BOARD_PLATFORM := universal990
-TARGET_BOARD_PLATFORM_GPU := mali-g77
 
 # Kernel
 TARGET_PREBUILT_KERNEL := device/samsung/r8s/prebuilt/Image
 TARGET_PREBUILT_DTB := device/samsung/r8s/prebuilt/dtb
-BOARD_PREBUILT_DTBOIMAGE := device/samsung/r8s/prebuilt/recoverydtbo
-#BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_PREBUILT_DTBOIMAGE := device/samsung/r8s/prebuilt/recovery_dtbo
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_KERNEL_ARCH := arm64
 
 # Boot
 BOARD_BOOT_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x10000000
-BOARD_KERNEL_CMDLINE := androidboot.hardware=exynos990 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := androidboot.hardware=exynos990 loop.max_part=7 androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_OFFSET := 0x00008000
@@ -74,7 +73,7 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_DTB_OFFSET := 0x00000000
 BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) 
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET) --second_offset $(BOARD_KERNEL_SECOND_OFFSET)
-BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION) --pagesize $(BOARD_KERNEL_PAGESIZE) --board "SRPTF26B001RU"
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION) --pagesize $(BOARD_KERNEL_PAGESIZE) --board "SRPTF26B009RU"
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB) --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_CUSTOM_BOOTIMG_MK := device/samsung/r8s/bootimg.mk
 
@@ -122,7 +121,7 @@ TW_INCLUDE_FBE_METADATA_DECRYPT := false
 BOARD_USES_METADATA_PARTITION := true
 
 # TWRP specific build flags
-TW_DEVICE_VERSION := 4_afaneh92
+TW_DEVICE_VERSION := 5_afaneh92
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
